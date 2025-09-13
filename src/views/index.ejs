@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Audi<span style="color:#16a34a">O</span>.AI</div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>
+                Turn your audio into text<br />
+                transcribe, summarize<br />
+                <span>tasks</span> and understand in seconds.
+            </h1>
+            <p>
+                Drop your audio file here and we will take
+                care of the rest.
+            </p>
+        </div>
+
+        <form class="upload-box" id="uploadBox">
+            <div id="formContent" class="fade-box">
+                <img src="https://img.icons8.com/ios/100/000000/folder-invoices--v1.png" />
+                <p>Drag and drop files to upload.</p>
+                <div class="file-upload">
+                    <label for="fileInput" id="fileLabel">Drop</label>
+                    <input type="file" id="fileInput" name="audio" hidden>
+                </div>
+                <button class="Generate-btn" type="submit">Generate</button>
+            </div>
+            <button class="Clear" id="clearBtn">Start new Generate</button>
+        </form>
+    </section>
+    <div class="generating"><p>Please wait...!</p></div>
+    <section class="sec2">
+        <div class="text">
+            <h1>CONTENT</h1>
+            <div class="textdiv">
+              
+            </div>
+        </div>
+        <div class="summary">
+            <h1>SUMMARY</h1>
+            <div class="sumdiv">
+              
+            </div>
+        </div>
+        <div class="Tasks">
+            <h1>TASKS</h1>
+            <div class="taskdiv">
+             
+            </div>
+        </div>
+    </section>
+    <script src="DOM.js"></script>
+</body>
+
+</html>

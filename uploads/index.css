@@ -1,0 +1,285 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fdf9;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-green {
+    background: #34d399;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: #16a34a;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+}
+
+.upload-box {
+    flex: 1;
+    background: #fff;
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    text-align: center;
+    padding: 40px;
+    transition: border-color 0.3s;
+}
+
+.upload-box.dragover {
+    border-color: #16a34a;
+}
+
+.upload-box img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.upload-box p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.upload-box button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #f1f5f9;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.file-upload {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.file-upload label {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0.5em;
+    background: #34d399;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Generate-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.Clear {
+    display: none;
+}
+
+.Clear:hover {
+    background-color: black;
+    color: white;
+}
+
+.fade-box {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 600px;
+    overflow: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease;
+}
+
+.fade-box.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
+    pointer-events: none;
+}
+
+/* GENERATING WINDOW */
+.generating {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #34d399;
+    border-radius: 8px;
+    animation: pulseWidth 2s infinite ease-in-out;
+    display: none;
+}
+
+@keyframes pulseWidth {
+    0% {
+        width: 60%;
+    }
+
+    50% {
+        width: 90%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+/* Section - 2 */
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    row-gap: 20px;
+    padding: 10px;
+    display: none;
+}
+
+
+
+.text {
+    width: 98%;
+    min-height: 150px;
+    height: auto;
+    background: #fff;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+
+.text h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.textdiv {
+    width: 98%;
+    height: auto;
+    margin: auto;
+}
+
+
+.summary {
+    width: 98%;
+    min-height: 150px;
+    height: auto;
+    background: #fff;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+
+.summary h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.sumdiv {
+    width: 98%;
+    height: auto;
+    margin: auto;
+}
+
+.Tasks {
+    width: 98%;
+    height: auto;
+    background: #fff;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+
+.Tasks h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.taskdiv {
+    width: 98%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    padding: 10px;
+}
+
+.action {
+    width: 98%;
+    height: auto;
+    border: 2px dotted green;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.action span {
+    font-weight: bolder;
+}
+
+.footer {
+    height: 10%;
+    background-color: black;
+}
